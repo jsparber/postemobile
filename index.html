@@ -39,9 +39,9 @@
 		<input type="text" name="__spDummyText1" style="display:none;" size=1/>
 		<input type="text" name="__spDummyText2" style="display:none;" size=1/>
 
-		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbUsername" type="text" style="width:100%;" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbUsername" tabindex="1" value="" />
+		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbUsername" type="text" style="width:98.8%;" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbUsername" tabindex="1" value="" />
 
-		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbPassword" type="password" style= width:100%;"" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbPassword" tabindex="2" value=""/>
+		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbPassword" type="password" style= width:98.8%;"" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbPassword" tabindex="2" value=""/>
 
 		<input type="text" name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$btEnter" value="Login" style="display:none;" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_btEnter" tabindex="4" class="pulsanteEntra" />
 		
@@ -51,6 +51,9 @@
 		<input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
 		 
 		</form>
+	<form>
+	<input type="submit" onclick="installApp()" value="Install App" style="width:100%;" />
+	</form>
 	</div>
 	</body>
 		<script type="text/javascript" >
@@ -64,6 +67,19 @@
 			setTimeout(function() {
 				iframe.src = "https://www.postemobile.it/areapersonale/Privati/pagine/PM13/AreaPersonale.aspx?ut=CO";
 				},1000);
+		}
+		function installApp(){
+		var manifestLocation = "http://jsparber.github.io/postemobile/manifest.webapp"; // your domain here
+		var installRequest = navigator.mozApps.install(manifestLocation);
+
+		installRequest.onsuccess = function(data) {
+				    // App installed successfully!
+		};
+
+		installRequest.onerror = function(err) {
+				    // App couldn't be installed!
+					    console.log("Install error!");
+		};
 		}
 	</script>
 	
