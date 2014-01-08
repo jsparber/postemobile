@@ -5,11 +5,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	</head>
 	<body style="margin:0px;overflow:auto; width:100%;" scrolling="no">
+		<div style="display:block; width: 460px;">
 		<div style="border: 0px; overflow: hidden; margin: auto; width:100%">
 			<iframe id="frame" scrolling="no" src="" style="border: 0px none; margin-left: -503px; height: 1400px; margin-top: -230px; width:964px; margin-bottom: -850px;">
 			</iframe>
 			<iframe style="display:none" name="hidden-form" ></iframe>
 		</div>
+		
 		<form action="https://www.postemobile.it/AreaProtetta/pagine/login.aspx" target="hidden-form" method="post" id="login_form">
 		<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
 		<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
@@ -37,18 +39,19 @@
 		<input type="text" name="__spDummyText1" style="display:none;" size=1/>
 		<input type="text" name="__spDummyText2" style="display:none;" size=1/>
 
-		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbUsername" type="text" style="" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbUsername" tabindex="1" value="" />
+		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbUsername" type="text" style="width:100%;" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbUsername" tabindex="1" value="" />
 
-		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbPassword" type="password" style="" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbPassword" tabindex="2" value=""/>
+		<input name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$tbPassword" type="password" style= width:100%;"" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_tbPassword" tabindex="2" value=""/>
 
 		<input type="text" name="ctl00$ctl34$g_ec207ccd_5ede_48e9_83d9_a00a34ae4230$ctl00$btEnter" value="Login" style="display:none;" id="ctl00_ctl34_g_ec207ccd_5ede_48e9_83d9_a00a34ae4230_ctl00_btEnter" tabindex="4" class="pulsanteEntra" />
 		
-		<input type="submit"  onclick="loadLogin()" name="" value="Login" style="" class="pulsanteEntra" />
+		<input type="submit"  onclick="loadLogin()" name="" value="Login" style="width:100%;" class="pulsanteEntra" />
 			        
 		<input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' />
 		<input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
 		 
 		</form>
+	</div>
 	</body>
 		<script type="text/javascript" >
 		loadLogin();
